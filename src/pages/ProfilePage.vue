@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div v-for="b in blogs" class="row">
+    <div v-for="b in blogs" class="row justify-content-center">
       <BlogCardComponent :blog="b" />
     </div>
 

@@ -19,6 +19,11 @@
                 Manage Account
               </div>
             </router-link>
+            <router-link v-if="account.id" :to="{ name: 'Profile', params: { id: account.id } }">
+              <div class="list-group-item dropdown-item list-group-item-action">
+                Go to your Profile Page
+              </div>
+            </router-link>
             <div class="list-group-item dropdown-item list-group-item-action text-danger selectable" @click="logout">
               <i class="mdi mdi-logout"></i>
               logout
@@ -51,4 +56,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
